@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="sbabic" fetch="https://github.com/sbabic"/>
+  <remote name="qt5" fetch="https://github.com/meta-qt5"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+
+  <project name="poky" path="layers/poky" remote="yocto" revision="09def309f91929f47c6cce386016ccb777bd2cfc"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="571e36e20e9d1f27af0eb4545291beeb64f280e2"/>
+  <project name="meta-qt5" path="layers/meta-qt5" remote="qt5" revision="aec1934cb2708236c033f2d205d5c3fbbebf7555"/>
+  <project name="meta-swupdate" path="layers/meta-swupdate" remote="sbabic" revision="d1d4abfaf82d37c31e3cec3602d6d8d56d105185"/>
+  <project name="hyyoxhk/meta-exynos" path="layers/meta-board/meta-exynos" remote="github" revision="3171eec7dc6ceb74d5c86bd7cc2c35dae7afab32"/>
+  <project name="hyyoxhk/meta-smart" path="layers/meta-board/meta-smart" remote="github" revision="f5837cd396488e66368027f97b4e054733f738de"/>
+</manifest>
