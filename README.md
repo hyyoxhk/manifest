@@ -1,11 +1,12 @@
-# itop4412-manifest
+# manifest
 
-本项目是 iTop-4412 开发板的 yocto 的repo manifest
+本项目包含一些主流开发板的 yocto 的 repo manifest
+
+- 迅为.iTop-4412 开发板
 
 # 构建环境
 
-本 yocto 项目是基于 kirkstone 分支，需要再 ubuntu-22.04 环境下编译，
-请确保构建主机配置如下
+本 yocto 项目是基于 kirkstone 分支，需要再 ubuntu-22.04 环境下编译，请确保构建主机配置如下
 
 1. cpu 主频2GHz以上
 2. cpu 核心数大于4核，越多越好，有利于多线程构建和编译
@@ -32,19 +33,19 @@ libssl-dev libgmp-dev libmpc-dev \
 lz4 zstd
 ```
 
-# 获取 repo 源
+# 获取 迅为.iTop-4412 开发板
 
 ```shell
-$> repo init -u https://github.com/hyyoxhk/itop4412-manifest.git -b kirkstone --repo-url https://gerrit-googlesource.proxy.ustclug.org/git-repo.git
+$> repo init -u https://github.com/hyyoxhk/manifest.git -b kirkstone -m itop4412-v1.1.xml --repo-url https://gerrit-googlesource.proxy.ustclug.org/git-repo.git
 $> repo sync
 ```
 
-# 初始化 oe 环境
+# 迅为.iTop-4412 开发板 初始化 oe 环境
 
 ```shell
 # source 会提示你选择，等初始化完后会自动进入 build-XXX 目录
 $> source layers/meta-board/meta-smart/envsetup.sh
-# 开始构建目标 image，iTop-4412 目前调试好了 small 版本
-$> bitbake smart-image-small
+# 开始构建目标 image
+$> bitbake smart-image-standard
 # 如果有代理会更好，yocto 菜谱中的源码包绝大部分在外网，代理会加速构建速度
 ```
