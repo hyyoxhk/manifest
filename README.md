@@ -30,7 +30,7 @@ xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl
 pylint xterm \
 bsdmainutils \
 libssl-dev libgmp-dev libmpc-dev \
-lz4 zstd
+lz4 zstd git-lfs hwdata 
 ```
 
 # 获取 迅为.iTop-4412 开发板
