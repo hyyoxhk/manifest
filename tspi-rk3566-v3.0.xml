@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="sbabic" fetch="https://github.com/sbabic"/>
+  <remote name="qt5" fetch="https://github.com/meta-qt5"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+
+  <project name="poky" path="layers/poky" remote="yocto" revision="e139e9d0ce343ba77a09601a976c92acd562c9df"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="4052c97dc83d0c88fc277d6fc1815e0699020daa"/>
+  <project name="meta-qt5" path="layers/meta-qt5" remote="qt5" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566"/>
+  <project name="meta-swupdate" path="layers/meta-swupdate" remote="sbabic" revision="d1d4abfaf82d37c31e3cec3602d6d8d56d105185"/>
+  <project name="hyyoxhk/meta-fcitx5" path="layers/meta-fcitx5" remote="github" revision="7cbdaad5839ab0c74f237987e263077ca073c0e8"/>
+  <project name="hyyoxhk/meta-rockchip" path="layers/meta-board/meta-rockchip" remote="github" revision="be0b90ec49756c92005068267c4d70c395c3ffcd"/>
+  <project name="hyyoxhk/meta-smart" path="layers/meta-board/meta-smart" remote="github" revision="bf972228f7767d8c4312482d5e76a2242be8f8a7"/>
+</manifest>
+
